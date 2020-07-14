@@ -6,35 +6,23 @@ Crie um banco de dados e o configure no .env:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=accordous
+DB_DATABASE=nomedobanco
 DB_USERNAME=root
 DB_PASSWORD=
 
-Execute as migrações:
-php artisan migrate
+Demonstração: https://www.youtube.com/watch?v=t23fHBMAoJY&feature=youtu.be
 
-Rode o projeto:
+Como usar:
+
+execute na pasta do projeto:
+
+composer install
+npm install
+npm dev
+php artisan key:generate
+php artisan migrate
+npm run watch
 php artisan serve
 
-Ele estará disponível em:
-http://127.0.0.1:8000/
+Key = AIzaSyB8wOPAzJwErpDx9hGV7f6J93kx7kCpWWE
 
-E, para acessar o graphql, entre em:
-http://127.0.0.1:8000/graphql-playground
-
-Execute a query:
-
-{
-  users(
-first: 10
-page: 1
-  ) {
-    data {
-    id
-    name
-      email
-    }
-  }
-}
-
-# Unicad
